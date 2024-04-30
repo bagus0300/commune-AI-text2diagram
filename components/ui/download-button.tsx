@@ -58,7 +58,7 @@ function DownloadButton({ disabled = true }) {
         className={`${buttonVariants({
           variant: "secondary",
           size: "sm",
-        })} download-btn mt-2 md:mt-0 bg-green-300`}
+        })} download-btn mt-2 md:mt-0 bg-green-400`}
       >
         Download Image
       </button>
