@@ -347,11 +347,7 @@ export default function IndexPage() {
             </div>
           </Dialog>
         </Transition.Root>
-
         <div className="position-absolute w-full h-[700px]">
-          <div className="mb-4">
-            Don't screenshot, you can download your diagram image.
-          </div>
           <div className="w-full h-[75%] md:h-full">
             <div className="dndflow border shadow-lg rounded-lg md:p-4">
               <ReactFlowProvider>
@@ -365,8 +361,7 @@ export default function IndexPage() {
                     onInit={onInit}
                     fitView
                   >
-                    <DownloadButton disabled={loading || nodes.length <= 1} />
-
+                    {/* <DownloadButton disabled={loading || nodes.length <= 1}/> */}
                     <Controls position={"top-right"} />
                     <MiniMap nodeStrokeWidth={3} zoomable pannable />
                     <Background
