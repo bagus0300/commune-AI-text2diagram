@@ -2,7 +2,6 @@ import Image from "next/image"
 
 const Home = () => {
   return (
-    // 1:10:34
     <div>
       <div>
         <h1>Creative Thoughts Agency.</h1>
