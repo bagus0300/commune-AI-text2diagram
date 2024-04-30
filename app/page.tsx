@@ -21,7 +21,7 @@ const Home = () => {
         </div>
         <div className="text-4xl text-center mt-10">
           <Link href="/diagram">
-            <button className="bg-blue-900 rounded-xl py-2 px-5 hover:bg-blue-600">
+            <button className="bg-blue-500 rounded-xl py-2 px-5 hover:bg-blue-600">
               Get Started
             </button>
           </Link>
