@@ -205,6 +205,7 @@ export default function IndexPage() {
           </AlertTitle>
         </Alert>
         <div className="text-sm font-semibold tracking-tight">Search:</div>
+
         <div className="w-full items-center">
           <form className="flex flex-col" onSubmit={handleSubmit}>
             <Input
@@ -268,6 +269,9 @@ export default function IndexPage() {
           </form>
         </div>
       </div>
+      <div className="ml-auto  md:ml-72">
+        Don't screenshot, you can download your diagram image.
+      </div>
       <div className="flex justify-between" ref={ref}>
         {/* Desktop Sidebar */}
         <Sidebar
@@ -280,6 +284,7 @@ export default function IndexPage() {
           }}
         />
         {/* Mobile Sidebar */}
+
         <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog
             as="div"
@@ -347,6 +352,7 @@ export default function IndexPage() {
             </div>
           </Dialog>
         </Transition.Root>
+
         <div className="position-absolute w-full h-[700px]">
           <div className="w-full h-[75%] md:h-full">
             <div className="dndflow border shadow-lg rounded-lg md:p-4">
@@ -361,7 +367,7 @@ export default function IndexPage() {
                     onInit={onInit}
                     fitView
                   >
-                    {/* <DownloadButton disabled={loading || nodes.length <= 1}/> */}
+                    <DownloadButton disabled={loading || nodes.length <= 1} />
                     <Controls position={"top-right"} />
                     <MiniMap nodeStrokeWidth={3} zoomable pannable />
                     <Background
