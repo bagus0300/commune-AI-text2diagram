@@ -192,13 +192,13 @@ export default function IndexPage() {
   }
 
   return (
-    <section className="px-2 md:container grid items-center gap-6 pb-8 pt-6 md:py-6 my-6 border rounded-md">
+    <div className="px-2 md:container grid items-center gap-6 pb-8 pt-6 md:py-6 my-6 border rounded-md">
       <div className="flex flex-col items-start gap-2">
         <p className="text-lg font-bold">
           Create an AI Generated Knowledge Diagram!
         </p>
         <Alert>
-          <RocketLaunchIcon className="h-4 w-4" />
+          <RocketLaunchIcon className="size-4" />
           <AlertTitle>
             A knowledge diagram offers a non-linear structure to information.
             Helpful for learning and understanding.
@@ -226,7 +226,7 @@ export default function IndexPage() {
               >
                 {loading ? (
                   <>
-                    <ReloadIcon className="mr-2 h-4 w-4 animate-spin" />{" "}
+                    <ReloadIcon className="mr-2 size-4 animate-spin" />{" "}
                     Loading...
                   </>
                 ) : (
@@ -331,7 +331,7 @@ export default function IndexPage() {
                       >
                         <span className="sr-only">Close sidebar</span>
                         <XMarkIcon
-                          className="h-6 w-6 text-white"
+                          className="size-6 text-white"
                           aria-hidden="true"
                         />
                       </button>
@@ -354,7 +354,7 @@ export default function IndexPage() {
         </Transition.Root>
 
         <div className="position-absolute w-full h-[700px]">
-          <div className="w-full h-[75%] md:h-full">
+          <div className="w-full h-[3/4] md:h-full">
             <div className="dndflow border shadow-lg rounded-lg md:p-4">
               <ReactFlowProvider>
                 <div className="reactflow-wrapper" ref={reactFlowWrapper}>
@@ -382,6 +382,6 @@ export default function IndexPage() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
