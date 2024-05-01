@@ -28,7 +28,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="xl:mx-60 lg:mx-20 md:mx-10 mt-32 shadow-md px-6 rounded-xl text-2xl text-overflow">
+        <div className="xl:mx-60 lg:mx-20 md:mx-10 mt-32 shadow-xl py-4 px-6 rounded-xl text-2xl text-overflow">
           <h2>
             TextDiagram Pro transforms written paragraphs into visually
             appealing graph structures, enabling users to explore ideas

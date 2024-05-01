@@ -12,7 +12,7 @@ import { buttonVariants } from "@/components/ui/button"
 function downloadImage(dataUrl: string) {
   const a = document.createElement("a")
 
-  a.setAttribute("download", "reactflow.png")
+  a.setAttribute("download", "diagram.png")
   a.setAttribute("href", dataUrl)
   a.click()
 }

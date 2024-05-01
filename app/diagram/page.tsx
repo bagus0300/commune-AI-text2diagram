@@ -226,7 +226,7 @@ export default function IndexPage() {
               >
                 {loading ? (
                   <>
-                    <ReloadIcon className="mr-2 size-4 animate-spin" />{" "}
+                    <ReloadIcon className="rounded-xl mr-2 size-4 animate-spin" />{" "}
                     Loading...
                   </>
                 ) : (
