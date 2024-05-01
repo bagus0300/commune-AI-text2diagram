@@ -1,11 +1,19 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { discount } from "@/public/assets"
+import { useTheme } from "next-themes"
+
+import NoSsr from "@/components/no-ssr"
+
+import "@/styles/theme.css"
 
 const Home = () => {
+  const { theme } = useTheme()
   return (
-    <div className="size-full py-6 gradient ">
-      <div>
+    <NoSsr>
+      <div className={`size-full py-6 ${theme === "dark" ? "" : "gradient"}`}>
         <div className="flex flex-row ml-auto items-center sm:ml-60">
           <Image src={discount} alt="discount" className="size-[32px]" />
           <p className="ml-2">
@@ -22,7 +30,11 @@ const Home = () => {
           </div>
           <div className="mt-10 text-center text-4xl">
             <Link href="/diagram">
-              <button className="rounded-xl px-5 py-2 border-[1px] bg-[rgb(126,225,245)] hover:bg-[rgb(39,205,238)]">
+              <button
+                className={`rounded-xl px-5 py-2 border-[1px] ${
+                  theme === "dark" ? "dark-button" : "light-button"
+                }`}
+              >
                 Get Started
               </button>
             </Link>
@@ -49,7 +61,7 @@ const Home = () => {
           </h2>
         </div>
       </div>
-    </div>
+    </NoSsr>
   )
 }
 

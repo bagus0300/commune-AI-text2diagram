@@ -1,0 +1,14 @@
+.light-button {
+  background: rgb(126, 225, 245);
+}
+
+.light-button:hover {
+  background: rgb(126, 225, 245);
+}
+.dark-button:hover {
+  background: rgb(0, 17, 18);
+}
+
+.gradient {
+  background: linear-gradient(to bottom, #ffffff 0%, #00ccff 100%);
+}

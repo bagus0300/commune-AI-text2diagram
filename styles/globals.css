@@ -88,9 +88,7 @@
   flex-grow: 1;
   height: 100%;
 }
-.gradient {
-  background: linear-gradient(to bottom, #ffffff 0%, #00ccff 100%);
-}
+
 .dndflow aside {
   border-right: 1px solid #eee;
   padding: 15px 10px;
