@@ -14,6 +14,12 @@ export function SiteHeader() {
 
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
+            <button className="font-bold hover:bg-gray-200 rounded-xl px-2">
+              Connect Wallet
+            </button>
+            {/* <button className="bg-blue-100 rounded-xl py-1 px-2 hover:bg-blue-200">
+              Connect Wallet
+            </button> */}
             <ThemeToggle />
           </nav>
         </div>
