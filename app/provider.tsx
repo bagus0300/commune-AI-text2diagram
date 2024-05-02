@@ -8,7 +8,7 @@ import { ToastContainer } from "react-toastify"
 
 const Providers = ({ children }: { children: ReactNode }) => {
   return (
-    <PolkadotProvider wsEndpoint={String(process.env.NEXT_PUBLIC_COMMUNE_API)}>
+    <PolkadotProvider wsEndpoint="wss://commune-api-node-1.communeai.net">
       <Provider store={store}>
         {children} <ToastContainer />
       </Provider>
