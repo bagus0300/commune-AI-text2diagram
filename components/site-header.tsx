@@ -25,8 +25,8 @@ export function SiteHeader() {
   return (
     <header className="bg-background sticky my-2 z-40 w-full border-b">
       <div className="container flex h-16 items-center space-x-4 sm:justify-end sm:space-x-0">
-        <div className="mr-[900px] flex flex-row">
-          <Image alt="diagram" src="/images/logo.png" width={80} height={80} />
+        <div className="mr-[700px] flex flex-row">
+          {/* <Image alt="diagram" src="/images/logo.png" width={80} height={80} /> */}
           <MainNav items={siteConfig.mainNav} />
         </div>
 
