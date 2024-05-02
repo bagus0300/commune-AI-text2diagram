@@ -12,7 +12,8 @@
     "react/jsx-key": "off",
     "tailwindcss/no-custom-classname": "off",
     "react/no-unescaped-entities": "off",
-    "tailwindcss/classnames-order": "off"
+    "tailwindcss/classnames-order": "off",
+    "@next/next/no-page-custom-font": "off"
   },
   "settings": {
     "tailwindcss": {

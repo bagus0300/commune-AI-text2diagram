@@ -6,9 +6,24 @@
   background: rgb(126, 225, 245);
 }
 .dark-button:hover {
-  background: rgb(0, 17, 18);
+  border: 2px solid #a9e6f6;
 }
 
 .gradient {
   background: linear-gradient(to bottom, #ffffff 0%, #00ccff 100%);
+}
+
+.dark-font {
+  background-image: linear-gradient(to bottom, #ffffff 0%, #00ccff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.dark-font-h2 {
+  color: #a9e6f6;
+}
+
+.shadow {
+  box-shadow: 4px 4px 6px 4px rgba (0, 228, 228, 0.1);
 }

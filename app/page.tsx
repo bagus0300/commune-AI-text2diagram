@@ -22,17 +22,26 @@ const Home = () => {
         </div>
 
         <div className="mt-10 w-full">
-          <div className="w-full text-center text-7xl">
-            AI Generated Knowledge Diagram
+          <div className={`${theme === "dark" ? "dark-font" : ""}`}>
+            <div
+              className={`w-full text-center text-7xl p-2 ${
+                theme === "dark" ? "dark-font" : ""
+              }`}
+            >
+              AI Generated Knowledge Diagram
+            </div>
+            <div className="mt-10 w-full text-center text-2xl">
+              Explore the power of connecting words and ideas effortlessly
+            </div>
           </div>
-          <div className="mt-10 w-full text-center text-2xl">
-            Explore the power of connecting words and ideas effortlessly
-          </div>
+
           <div className="mt-10 text-center text-4xl">
             <Link href="/diagram">
               <button
                 className={`rounded-xl px-5 py-2 border-[1px] ${
-                  theme === "dark" ? "dark-button" : "light-button"
+                  theme === "dark"
+                    ? "dark-button dark-font"
+                    : "light-button hover:border-[2px] "
                 }`}
               >
                 Get Started
@@ -41,7 +50,7 @@ const Home = () => {
           </div>
         </div>
         <div className="xl:mx-60 lg:mx-20 md:mx-10 mt-32 shadow-xl py-4 px-6 rounded-xl text-2xl text-overflow">
-          <h2>
+          <h2 className={`${theme === "dark" ? "dark-font-h2 shadow" : ""}`}>
             TextDiagram Pro transforms written paragraphs into visually
             appealing graph structures, enabling users to explore ideas
             presented in the text more intuitively. By leveraging advanced
@@ -50,7 +59,7 @@ const Home = () => {
             comprehension while adding an engaging visual element to traditional
             linear reading experiences.
           </h2>
-          <h2 className="mt-10">
+          <h2 className={`mt-10 ${theme === "dark" ? "dark-font-h2" : ""}`}>
             Whether studying complex topics, brainstorming creative ideas,
             organizing research findings, or simply seeking a fresh approach
             towards understanding lengthier texts, TextDiagram Pro offers an
