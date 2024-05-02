@@ -25,7 +25,7 @@ export function SiteHeader() {
   return (
     <header className="bg-background sticky my-2 z-40 w-full border-b">
       <div className="container flex h-16 items-center space-x-4 sm:justify-end sm:space-x-0">
-        <div className="mr-[700px] flex flex-row">
+        <div className="flex flex-row">
           {/* <Image alt="diagram" src="/images/logo.png" width={80} height={80} /> */}
           <MainNav items={siteConfig.mainNav} />
         </div>
@@ -33,7 +33,7 @@ export function SiteHeader() {
         <Menu as="div" className="flex">
           <Menu.Button
             style={{ marginLeft: "0.35rem" }}
-            className="text-black hover:border-[3px] dark:text-white dark:hover:text-blue-100 border-[2px] p-0 shadow-md  rounded-lg px-4 py-2"
+            className="text-black hover:border-[3px] dark:text-white dark:hover:text-blue-100 border-[2px] p-0 shadow-md  rounded-lg px-4 py-2 mr-4"
           >
             Choose wallet
           </Menu.Button>

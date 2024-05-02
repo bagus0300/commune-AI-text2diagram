@@ -12,7 +12,7 @@ interface MainNavProps {
 
 export function MainNav({ items }: MainNavProps) {
   return (
-    <div className="flex gap-6 md:gap-10">
+    <div className="flex md:mr-[200px] sm:mr-auto gap-6 md:gap-10">
       <Link href="/" className="flex flex-row items-center ">
         <Image
           alt="diagram"
@@ -20,7 +20,9 @@ export function MainNav({ items }: MainNavProps) {
           width={80}
           height={80}
         ></Image>
-        <span className="text-xl font-bold ">{siteConfig.name}</span>
+        <span className="md:text-xl sm:text-sm font-bold ">
+          {siteConfig.name}
+        </span>
         <span className="mt-1">{siteConfig.subName}</span>
       </Link>
       {items?.length ? (
