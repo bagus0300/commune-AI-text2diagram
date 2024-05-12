@@ -371,7 +371,7 @@ export default function IndexPage() {
                     <Controls position={"top-right"} />
                     <MiniMap nodeStrokeWidth={3} zoomable pannable />
                     <Background
-                      variant={BackgroundVariant.Lines}
+                      // variant={BackgroundVariant.Lines}
                       gap={15}
                       size={1}
                     />
