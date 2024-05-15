@@ -23,7 +23,7 @@ export function SiteHeader() {
   const { isInitialized, handleConnect, selectedAccount } = usePolkadot()
   const { theme } = useTheme()
   return (
-    <header className="bg-background sticky my-2 z-40 w-full border-b">
+    <header className="bg-background sticky mx-[30px] my-2 z-40 w-full border-b">
       <div className="container flex h-16 items-center space-x-4 sm:justify-end sm:space-x-0">
         <div className="flex flex-row">
           {/* <Image alt="diagram" src="/images/logo.png" width={80} height={80} /> */}

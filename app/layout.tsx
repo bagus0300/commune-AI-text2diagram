@@ -73,7 +73,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <RainbowKitProvider>
                 <Providers>
                   <Provider store={store}>
-                    <ThemeProvider attribute="class" defaultTheme="light">
+                    <ThemeProvider attribute="class" defaultTheme="dark">
                       <div className="relative flex w-full h-screen flex-col">
                         <SiteHeader />
                         <div className="flex-1">{children}</div>
