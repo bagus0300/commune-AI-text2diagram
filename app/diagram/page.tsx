@@ -370,11 +370,11 @@ export default function IndexPage() {
                     <DownloadButton disabled={loading || nodes.length <= 1} />
                     <Controls position={"top-right"} />
                     <MiniMap nodeStrokeWidth={3} zoomable pannable />
-                    <Background
+                    {/* <Background
                       // variant={BackgroundVariant.Lines}
                       gap={15}
                       size={1}
-                    />
+                    /> */}
                   </ReactFlow>
                 </div>
               </ReactFlowProvider>
